@@ -1,0 +1,6 @@
+from cryptography.fernet import Fernet
+Clave2="KazX6oDQZen_bhZNVvRVcGVJKqlzTjJ_ksiNm--WlPk="
+f2= Fernet(Clave2)
+Mensaje="gAAAAABluwPSDHJ3Pi2kcuWbUs4UTYHJJ65NJ6Aw9f6JTD7r2TGLzZLFKNvJX2CVgIluQb6QbJy-Pnp_4zmIQFiFQJTydukRdoVPm215bDqPTeRZgg19awLqkGcJHMdv2uXgglVuJ2Lr"
+result=f2.decrypt(Mensaje)
+print(result)
